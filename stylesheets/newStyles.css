@@ -1,0 +1,563 @@
+/* line 1, ../sass/newStyles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 18, ../sass/newStyles.scss */
+html {
+  min-height: 100%;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/newStyles.scss */
+body {
+  margin: auto;
+  padding: 0px;
+  height: 100%;
+  font: 16px/1.5;
+  font-family: "beb", cursive, sans-serif;
+  overflow: hidden;
+}
+
+/* line 58, ../sass/newStyles.scss */
+.noScroll {
+  overflow: hidden;
+}
+
+/* line 62, ../sass/newStyles.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 67, ../sass/newStyles.scss */
+.current a {
+  color: black;
+}
+
+/* line 71, ../sass/newStyles.scss */
+header h1 {
+  float: left;
+  font-size: 3em;
+}
+
+/* line 76, ../sass/newStyles.scss */
+header ul {
+  float: right;
+  background-color: green;
+}
+
+/* line 81, ../sass/newStyles.scss */
+header li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  font-size: 1.25em;
+  border-radius: 5px;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 92, ../sass/newStyles.scss */
+.mini {
+  height: 50px;
+  opacity: 1;
+}
+
+/* line 102, ../sass/newStyles.scss */
+header {
+  height: 100px;
+  top: -100px;
+  position: fixed;
+  background-color: #010101;
+  width: 100%;
+  z-index: 5;
+  color: white;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  box-sizing: border-box;
+}
+
+/* line 116, ../sass/newStyles.scss */
+.container {
+  width: 800px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+/* line 122, ../sass/newStyles.scss */
+#freeScroll.page {
+  height: 200vh;
+}
+
+/* line 127, ../sass/newStyles.scss */
+#banner {
+  z-index: 2;
+  margin: auto;
+}
+
+/* line 136, ../sass/newStyles.scss */
+footer {
+  height: 20vh;
+  max-height: 100px;
+  min-height: 30px;
+  background-color: #D8D8D8;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: -20vh;
+  border-top: 2px solid white;
+}
+
+/* line 148, ../sass/newStyles.scss */
+.fixedFooter {
+  bottom: 0vh;
+}
+
+/* line 152, ../sass/newStyles.scss */
+#scrollBounds {
+  height: 50%;
+  width: 25px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  position: fixed;
+  background-color: #D8D8D8;
+  z-index: 4;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: -30px;
+  border: 2px solid white;
+}
+/* line 166, ../sass/newStyles.scss */
+#scrollBounds a {
+  color: #D8D8D8;
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  left: 30%;
+}
+
+/* line 175, ../sass/newStyles.scss */
+.invis {
+  opacity: 1;
+}
+
+/* line 179, ../sass/newStyles.scss */
+#overlay {
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 187, ../sass/newStyles.scss */
+.anim {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 201, ../sass/newStyles.scss */
+.anim2 {
+  -webkit-transition: all .75s, bottom .25s, opacity 2s;
+  -moz-transition: all .75s, bottom .25s, opacity 2s;
+  -o-transition: all .75s, bottom .25s, opacity 2s;
+  transition: all .75s, bottom .25s, opacity 2s;
+}
+
+/* line 208, ../sass/newStyles.scss */
+#scrollBar {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 217, ../sass/newStyles.scss */
+.sidebar {
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+}
+
+/* line 223, ../sass/newStyles.scss */
+.above {
+  top: 100%;
+  opacity: 0;
+}
+
+/* line 228, ../sass/newStyles.scss */
+.beneath {
+  top: -100%;
+  opacity: 0;
+}
+
+/* line 233, ../sass/newStyles.scss */
+.current {
+  background-color: white;
+}
+
+/* line 237, ../sass/newStyles.scss */
+#services .sidebar {
+  height: 100%;
+  width: 45%;
+  left: 50%;
+  background: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 80%, rgba(225, 225, 225, 0) 150%);
+  background: -webkit-linear-gradient(to right, #e1e1e1 0%, #e1e1e1 80%, rgba(225, 225, 225, 0) 150%);
+}
+
+/* line 250, ../sass/newStyles.scss */
+#testimonials .sidebar {
+  height: 100%;
+  background-color: #D8D8D8;
+  width: 45%;
+  right: 50%;
+  background: linear-gradient(to right, rgba(255, 225, 225, 0) -50%, #e1e1e1 20%, white 150%);
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 225, 0) -50%, #e1e1e1 20%, white 150%);
+}
+
+/* line 261, ../sass/newStyles.scss */
+#benefits .sidebar {
+  height: 45%;
+  background-color: #D8D8D8;
+  width: 75%;
+  left: 12.5%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) -50%, white 20%, white 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) -50%, white 20%, white 100%);
+}
+
+/* line 272, ../sass/newStyles.scss */
+#services {
+  background-color: rgba(0, 128, 0, 0);
+  width: 100%;
+}
+
+/* line 278, ../sass/newStyles.scss */
+#testimonials {
+  background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+}
+
+/* line 285, ../sass/newStyles.scss */
+#benefits {
+  background-color: rgba(0, 0, 255, 0);
+  width: 100%;
+}
+
+/* line 291, ../sass/newStyles.scss */
+.bannerimg {
+  background-image: url("../img/cityscape.jpg");
+  background-size: cover;
+}
+
+/* line 297, ../sass/newStyles.scss */
+#services .service {
+  background-image: url("../img/above.jpg");
+}
+
+/* line 303, ../sass/newStyles.scss */
+#services .service:nth-child(2) {
+  background-image: url("../img/rural7.jpg");
+}
+
+/* line 308, ../sass/newStyles.scss */
+#testimonials .testi {
+  background-image: url("../img/men.jpeg");
+}
+
+/* line 313, ../sass/newStyles.scss */
+#testimonials .testi:nth-child(2) {
+  background-image: url("../img/code3.jpeg");
+}
+
+/* line 318, ../sass/newStyles.scss */
+#benefits .benefit {
+  background-image: url("../img/code1.jpeg");
+}
+
+/* line 323, ../sass/newStyles.scss */
+#benefits .benefit:nth-child(2) {
+  left: 50%;
+  background-repeat: no-repeat;
+  background-image: url("../img/rural5.jpeg");
+}
+
+/* line 330, ../sass/newStyles.scss */
+#banner {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover auto;
+  background-position: 50%, 50%;
+  background-color: #DDDDDD;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 343, ../sass/newStyles.scss */
+.vert .base {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+/* line 352, ../sass/newStyles.scss */
+.vert .block {
+  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+/* line 358, ../sass/newStyles.scss */
+#testimonials .base {
+  background-color: green;
+  background-color: rgba(0, 128, 0, 0);
+  right: 0px;
+  float: right;
+}
+
+/* line 365, ../sass/newStyles.scss */
+.darkHalfOpac {
+  background-color: rgba(100, 100, 100, 0.25);
+}
+
+/* line 369, ../sass/newStyles.scss */
+#services .base {
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0);
+  left: 0px;
+  float: left;
+}
+
+/* line 376, ../sass/newStyles.scss */
+.page {
+  padding-bottom: 20px;
+  padding-top: 70px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 384, ../sass/newStyles.scss */
+#benefits.page {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 390, ../sass/newStyles.scss */
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 395, ../sass/newStyles.scss */
+#team {
+  width: 90%;
+  margin: auto;
+  height: 230vh;
+  margin: 5vw;
+  padding: 5vw;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* line 405, ../sass/newStyles.scss */
+.normalSize {
+  transform: scale(0.75, 0.75);
+}
+
+/* line 410, ../sass/newStyles.scss */
+#benefits .base {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 0, 128, 0);
+  position: relative;
+  padding: 0px;
+  margin-left: 0px;
+}
+
+/* line 420, ../sass/newStyles.scss */
+.block {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 5em;
+  box-sizing: border-box;
+  background: #000 url("0.jpg");
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  width: 40vh;
+  height: 40%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+/* line 437, ../sass/newStyles.scss */
+#benefits .benefit {
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0);
+  height: 40vh;
+  bottom: 0%;
+}
+
+/* line 444, ../sass/newStyles.scss */
+.benefitContainer {
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  float: left;
+  height: 55vh;
+  margin-top: 45vh;
+}
+
+/* line 455, ../sass/newStyles.scss */
+#main {
+  height: 200vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  width: calc(100vw + 16px);
+  top: 100vh;
+  padding-top: 200vh;
+}
+
+/* line 474, ../sass/newStyles.scss */
+#scrollTarget {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 97%;
+  position: fixed;
+  margin: auto;
+}
+
+@media (max-height: 640px) {
+  /* line 487, ../sass/newStyles.scss */
+  #scrollBounds {
+    height: 50%;
+    width: 25px;
+    top: 15vh;
+    bottom: 0px;
+    margin: auto;
+    position: fixed;
+    background-color: #D8D8D8;
+    z-index: 4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: -30px;
+    border: 2px solid white;
+  }
+}
+@media (max-height: 260px) {
+  /* line 505, ../sass/newStyles.scss */
+  footer {
+    height: 10vh;
+    bottom: 0vh;
+  }
+
+  /* line 510, ../sass/newStyles.scss */
+  .fixedFooter {
+    bottom: 0vh;
+  }
+}
+@media (min-width: 1120px) {
+  /* line 516, ../sass/newStyles.scss */
+  #scrollTarget {
+    margin: auto;
+    width: calc(800px + 25vw);
+  }
+
+  /* line 521, ../sass/newStyles.scss */
+  #services .sidebar {
+    width: 40%;
+  }
+
+  /* line 524, ../sass/newStyles.scss */
+  #testimonials .sidebar {
+    width: 40%;
+  }
+
+  /* line 528, ../sass/newStyles.scss */
+  #banner {
+    width: 100vw;
+  }
+}
+/* line 533, ../sass/newStyles.scss */
+.testibab {
+  background-color: green;
+  height: 1000px;
+}
+
+/* line 538, ../sass/newStyles.scss */
+.bannerPadding {
+  height: 100vh;
+}
+
+/* line 551, ../sass/newStyles.scss */
+.push {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+/* line 559, ../sass/newStyles.scss */
+.screenHeight {
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
+
+/* line 567, ../sass/newStyles.scss */
+.red {
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* line 571, ../sass/newStyles.scss */
+.yellow {
+  background-color: yellow;
+}
+
+/* line 574, ../sass/newStyles.scss */
+.blue {
+  background-color: blue;
+}
+
+/* line 577, ../sass/newStyles.scss */
+.orange {
+  background-color: orange;
+}
+
+/* line 580, ../sass/newStyles.scss */
+.green {
+  background-color: green;
+}

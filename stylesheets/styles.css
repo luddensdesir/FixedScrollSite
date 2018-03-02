@@ -1,0 +1,661 @@
+/* line 1, ../sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 18, ../sass/styles.scss */
+html {
+  min-height: 100%;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* line 26, ../sass/styles.scss */
+body {
+  margin: auto;
+  padding: 0px;
+  height: 100%;
+  font: 16px/1.5;
+  font-family: "beb", cursive, sans-serif;
+  overflow: hidden;
+}
+
+/* line 58, ../sass/styles.scss */
+.noScroll {
+  overflow: hidden;
+}
+
+/* line 62, ../sass/styles.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 67, ../sass/styles.scss */
+.current a {
+  color: black;
+}
+
+/* line 71, ../sass/styles.scss */
+header h1 {
+  float: left;
+  font-size: 3em;
+}
+
+/* line 76, ../sass/styles.scss */
+header ul {
+  float: right;
+}
+
+/* line 81, ../sass/styles.scss */
+header li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  font-size: 1.25em;
+  border-radius: 5px;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 92, ../sass/styles.scss */
+.mini {
+  height: 50px;
+  opacity: 1;
+}
+
+/* line 104, ../sass/styles.scss */
+header {
+  height: 100px;
+  top: -100px;
+  position: fixed;
+  background-color: #010101;
+  width: 100%;
+  z-index: 5;
+  color: white;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+}
+
+/* line 118, ../sass/styles.scss */
+.headerContainer {
+  width: 800px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+/* line 124, ../sass/styles.scss */
+#freeScroll.page {
+  height: 200vh;
+}
+
+/* line 129, ../sass/styles.scss */
+#banner {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover auto;
+  background-position: 50%, 50%;
+  background-color: #DDDDDD;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  margin: auto;
+}
+
+/* line 143, ../sass/styles.scss */
+footer {
+  height: 20vh;
+  max-height: 100px;
+  min-height: 30px;
+  background-color: #D8D8D8;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: -20vh;
+  border-top: 2px solid white;
+}
+
+/* line 155, ../sass/styles.scss */
+.fixedFooter {
+  bottom: 0vh;
+}
+
+/* line 159, ../sass/styles.scss */
+#scrollBounds {
+  height: 50%;
+  width: 25px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  position: fixed;
+  background-color: #D8D8D8;
+  z-index: 4;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: -30px;
+  border: 2px solid white;
+}
+/* line 173, ../sass/styles.scss */
+#scrollBounds a {
+  color: #D8D8D8;
+  position: absolute;
+  margin: auto;
+  bottom: 10px;
+  left: 30%;
+}
+
+/* line 182, ../sass/styles.scss */
+.invis {
+  opacity: 1;
+}
+
+/* line 186, ../sass/styles.scss */
+#overlay {
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 194, ../sass/styles.scss */
+.anim {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 208, ../sass/styles.scss */
+.anim2 {
+  -webkit-transition: all .75s, bottom .25s, opacity 2s;
+  -moz-transition: all .75s, bottom .25s, opacity 2s;
+  -o-transition: all .75s, bottom .25s, opacity 2s;
+  transition: all .75s, bottom .25s, opacity 2s;
+}
+
+/* line 215, ../sass/styles.scss */
+#scrollBar {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 225, ../sass/styles.scss */
+.current {
+  background-color: white;
+}
+
+/* line 229, ../sass/styles.scss */
+#services {
+  background-color: rgba(0, 128, 0, 0);
+}
+
+/* line 235, ../sass/styles.scss */
+#testimonials {
+  background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+}
+
+/* line 242, ../sass/styles.scss */
+.bannerimg {
+  background-image: url("../img/cityscape.jpg");
+  background-size: cover;
+}
+
+/* line 248, ../sass/styles.scss */
+#services .service {
+  background-image: url("../img/above.jpg");
+}
+
+/* line 254, ../sass/styles.scss */
+#services .service:nth-child(2) {
+  background-image: url("../img/rural7.jpg");
+}
+
+/* line 259, ../sass/styles.scss */
+#testimonials .testi {
+  background-image: url("../img/men.jpeg");
+}
+
+/* line 264, ../sass/styles.scss */
+#testimonials .testi:nth-child(2) {
+  background-image: url("../img/code3.jpeg");
+}
+
+/* line 272, ../sass/styles.scss */
+.vert .base {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+/* line 283, ../sass/styles.scss */
+#testimonials .container {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+/* line 289, ../sass/styles.scss */
+#services .container {
+  height: 100%;
+  width: 50%;
+}
+
+/* line 294, ../sass/styles.scss */
+.vert .block {
+  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+/* line 300, ../sass/styles.scss */
+#testimonials .base {
+  background-color: rgba(0, 128, 0, 0);
+  right: 0px;
+  float: right;
+}
+
+/* line 307, ../sass/styles.scss */
+.darkHalfOpac {
+  background-color: rgba(100, 100, 100, 0.25);
+}
+
+/* line 311, ../sass/styles.scss */
+#services .base {
+  left: 0px;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* line 318, ../sass/styles.scss */
+.page {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 326, ../sass/styles.scss */
+#team {
+  width: 90%;
+  margin: auto;
+  height: 170vh;
+  margin: 5vw;
+  padding: 5vw;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* line 336, ../sass/styles.scss */
+.normalSize {
+  transform: scale(0.75, 0.75);
+}
+
+/* line 340, ../sass/styles.scss */
+#benefits .base {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 0, 128, 0);
+  position: relative;
+  padding: 0px;
+  margin-left: 0px;
+  bottom: 0px;
+}
+
+/* line 350, ../sass/styles.scss */
+#benefits.page {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* line 356, ../sass/styles.scss */
+#benefits .benefit {
+  background-image: url("../img/code1.jpeg");
+  right: 50%;
+}
+
+/* line 361, ../sass/styles.scss */
+#benefits .benefit:nth-child(2) {
+  background-size: auto 100%;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-image: url("../img/rural5.jpeg");
+}
+
+/* line 368, ../sass/styles.scss */
+.block {
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 5em;
+  box-sizing: border-box;
+  position: relative;
+  background: #000 url("0.jpg");
+  background-position: 0px;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  margin-bottom: 2.5%;
+}
+
+/* line 387, ../sass/styles.scss */
+#benefits .benefit {
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0);
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  width: 50%;
+}
+
+/* line 401, ../sass/styles.scss */
+.base {
+  z-index: 2;
+}
+
+/* line 405, ../sass/styles.scss */
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0%;
+  left: 0px;
+}
+
+/* line 414, ../sass/styles.scss */
+#services .sidebarBg {
+  background: linear-gradient(to right, #e1e1e1 0%, #e1e1e1 80%, rgba(225, 225, 225, 0) 150%);
+  background: -webkit-linear-gradient(to right, #e1e1e1 0%, #e1e1e1 80%, rgba(225, 225, 225, 0) 150%);
+}
+
+/* line 419, ../sass/styles.scss */
+#testimonials .sidebarBg {
+  background: linear-gradient(to right, rgba(255, 225, 225, 0) -50%, #e1e1e1 20%, white 150%);
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 225, 0) -50%, #e1e1e1 20%, white 150%);
+}
+
+/* line 423, ../sass/styles.scss */
+#benefits .sidebar {
+  height: 50%;
+  background-color: #D8D8D8;
+  width: 100%;
+}
+
+/* line 434, ../sass/styles.scss */
+.sidebarBg {
+  width: 100%;
+  height: calc(100% + 150px);
+  margin-top: -75px;
+}
+
+/* line 440, ../sass/styles.scss */
+#testimonials .sideContainer {
+  padding-right: 50%;
+  padding-left: 0%;
+}
+
+/* line 445, ../sass/styles.scss */
+.sideContainer {
+  box-sizing: border-box;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 456, ../sass/styles.scss */
+#benefits {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  box-sizing: border-box;
+}
+/* line 462, ../sass/styles.scss */
+#benefits .container {
+  width: 100%;
+  height: 100%;
+  top: 50vh;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+}
+/* line 471, ../sass/styles.scss */
+#benefits .captionContainer {
+  width: 92.5%;
+  height: 100%;
+  top: 50;
+  left: 0;
+  bottom: 50;
+  right: 0;
+  margin: auto;
+  padding: 0;
+}
+/* line 482, ../sass/styles.scss */
+#benefits .captions {
+  height: 100%;
+}
+/* line 485, ../sass/styles.scss */
+#benefits .caption {
+  position: relative;
+  float: left;
+  height: 100vh;
+  width: 50%;
+}
+/* line 491, ../sass/styles.scss */
+#benefits .captionBg {
+  height: 100%;
+  width: 60%;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/* line 502, ../sass/styles.scss */
+.captionContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+/* line 510, ../sass/styles.scss */
+.captionContainer .captions {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* line 514, ../sass/styles.scss */
+.captionContainer .captions .caption {
+  height: 50%;
+  position: relative;
+}
+/* line 518, ../sass/styles.scss */
+.captionContainer .captions .caption .captionBg {
+  background-color: black;
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/* line 537, ../sass/styles.scss */
+.caption p {
+  word-wrap: break-word;
+  text-align: right;
+}
+
+/* line 542, ../sass/styles.scss */
+.benefitContainer {
+  width: 50%;
+  position: relative;
+  float: left;
+  height: 50vh;
+  top: 50%;
+}
+
+/* line 552, ../sass/styles.scss */
+#main {
+  height: 200vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  z-index: 36;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  width: calc(100vw + 16px);
+  top: 100vh;
+  padding-top: 200vh;
+}
+
+/* line 571, ../sass/styles.scss */
+#scrollTarget {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 97%;
+  position: fixed;
+  margin: auto;
+}
+
+/* line 583, ../sass/styles.scss */
+.above {
+  top: 100%;
+  opacity: 0;
+}
+
+/* line 588, ../sass/styles.scss */
+.beneath {
+  top: -100%;
+}
+
+@media (max-height: 640px) {
+  /* line 595, ../sass/styles.scss */
+  #scrollBounds {
+    height: 50%;
+    width: 25px;
+    top: 15vh;
+    bottom: 0px;
+    margin: auto;
+    position: fixed;
+    background-color: #D8D8D8;
+    z-index: 4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: -30px;
+    border: 2px solid white;
+  }
+}
+@media (max-height: 260px) {
+  /* line 613, ../sass/styles.scss */
+  footer {
+    height: 10vh;
+  }
+
+  /* line 618, ../sass/styles.scss */
+  .fixedFooter {
+    bottom: 0vh;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 625, ../sass/styles.scss */
+  .vert .base {
+    display: inline-block;
+  }
+}
+@media (min-width: 1120px) {
+  /* line 637, ../sass/styles.scss */
+  #scrollTarget {
+    margin: auto;
+    width: calc(800px + 25vw);
+  }
+
+  /* line 649, ../sass/styles.scss */
+  #banner {
+    width: 100vw;
+  }
+}
+/* line 654, ../sass/styles.scss */
+.testibab {
+  height: 1000px;
+}
+
+/* line 659, ../sass/styles.scss */
+.bannerPadding {
+  height: 100vh;
+}
+
+/* line 663, ../sass/styles.scss */
+.push {
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0);
+}
+
+/* line 671, ../sass/styles.scss */
+.screenHeight {
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
+
+/* line 679, ../sass/styles.scss */
+.red {
+  background-color: red;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+/* line 683, ../sass/styles.scss */
+.yellow {
+  background-color: yellow;
+}
+
+/* line 686, ../sass/styles.scss */
+.blue {
+  background-color: blue;
+}
+
+/* line 689, ../sass/styles.scss */
+.orange {
+  background-color: orange;
+}

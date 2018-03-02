@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+// .cover{
+//   position: absolute;
+//   width: 17px;
+//   height: 100%;
+//   float: right;
+//   background-color: red;
+//   z-index: 10;
+//   right: 0px;
+// }
+
+html{
+  min-height: 100%;
+  height: 100%;
+  width: 100vw;
+  // overflow-y: hidden;
+  overflow: hidden;
+}
+
+body{
+  margin: auto;
+  padding: 0px;
+  // width: calc(101.8%);
+  // width: 50%;
+  height: 100%;
+  font: 16px/1.5;
+  font-family: "beb", cursive, sans-serif;
+  overflow: hidden;
+} 
+
+$alpha: 0;
+
+// .main{
+//   // border: 20px solid white;
+//   // padding-right: 20px;
+//   // overflow-y: scroll;
+//   // overflow-x: hidden;
+//   overflow: auto;
+//   // padding-right: 17px;
+//   // height: 100%;
+//   // width: calc(100% + 16px); //hide the stupid scrollbar
+//   -webkit-transition: all .25s; // Chrome
+//   -moz-transition: all .25s; // Mozilla
+//   -o-transition: all .25s; // Opera
+//   transition: all .25s; 
+//   margin: auto;
+//   width: 95%;
+//   height: auto;
+//   position: relative;
+// }
+
+.noScroll{
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.current a{
+  color: black;
+}
+
+header h1{
+  float: left;
+  font-size: 3em;
+}
+
+header ul{
+  float: right;
+  background-color: green;
+}
+
+header li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+  font-size: 1.25em;
+  border-radius: 5px;
+  padding: 2.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mini{
+  height: 50px;
+  opacity: 1;
+  // color: #A29FA0;
+}
+
+$headCol: #FFFFFF;
+$border: 2px solid white;
+$headerHeight: 100px;
+$headerSmallHeight: 50px;
+
+header{
+  height: $headerHeight;
+  top: -$headerHeight;
+  position: fixed;
+  background-color: rgba( 1, 1, 1, 1);
+  width: 100%;
+  z-index: 5;
+  color: white;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  box-sizing: border-box;
+  border-bottom: $border;
+}
+
+
+.container{
+  width: 800px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+#freeScroll.page{
+  height: 200vh;
+  // height: 100vh;
+}
+
+#banner{
+  z-index: 2;
+  margin: auto;
+}
+
+#benefits{
+  // background-color: red;
+}
+
+footer{
+  height: 20vh;
+  max-height: 100px;
+  min-height: 30px;
+  background-color: #D8D8D8;
+  background-color: rgba(0,0,0, 1);
+  width: 100%;
+  position: fixed;
+  bottom: -20vh;
+  border-top: $border;
+}
+
+.fixedFooter{
+  bottom: 0vh;
+}
+
+#scrollBounds{
+  height: 50%;
+  width: 25px;
+  top: 0px;
+  bottom: 0px;
+  margin:auto;
+  position: fixed;
+  background-color: #D8D8D8;
+  z-index: 4;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: -30px;
+  border: 2px solid white;
+
+  a{
+    color: #D8D8D8;
+    position: absolute;
+    margin: auto;
+    bottom: 10px;
+    left: 30%;
+  }
+}
+
+.invis{
+  opacity: 1;
+}
+
+#overlay{
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.anim{
+  -webkit-transition: all 1s; // Chrome
+  -moz-transition: all 1s; // Mozilla
+  -o-transition: all 1s; // Opera
+  transition: all 1s; 
+}
+
+// .scrollAnim{
+//   -webkit-transition: margin-left 1s; // Chrome
+//   -moz-transition: margin-left 1s; // Mozilla
+//   -o-transition: margin-left 1s; // Opera
+//   transition: margin-left 1s; 
+// }
+
+.anim2{
+  -webkit-transition: all .75s, bottom .25s, opacity 2s; // Chrome
+  -moz-transition: all .75s, bottom .25s, opacity 2s; // Mozilla
+  -o-transition: all .75s, bottom .25s, opacity 2s; // Opera
+  transition: all .75s, bottom .25s, opacity 2s; 
+}
+
+#scrollBar{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar{
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+}
+
+.above{
+  top: 100%;
+  opacity: 0;
+}
+
+.beneath{
+  top: -100%;
+  opacity: 0;
+}
+ 
+.current{
+  background-color: white;
+}
+
+#services .sidebar{
+  // transform: translateY(5.5%);
+  // margin-top: calc(70px);
+  height: 100%;
+  width: 45%;
+  // float: right;
+  // right: 50%;
+  left: 50%;
+  // background-color: #D8D8D8;
+  background:         linear-gradient(to right, rgba(225, 225, 225, 1) 0%, rgba(225, 225, 225, 1) 80%,  rgba(225, 225, 225, 0) 150%);
+  background: -webkit-linear-gradient(to right, rgba(225, 225, 225, 1) 0%, rgba(225, 225, 225, 1) 80%,  rgba(225, 225, 225, 0) 150%);
+}
+
+#testimonials .sidebar{
+  // transform: translateY(5.5%);
+  // margin-top: calc(70px);
+  height: 100%;
+  background-color: #D8D8D8;
+  width: 45%;
+  right: 50%;
+  background:         linear-gradient(to right, rgba(255, 225, 225, 0) -50%, rgba(225, 225, 225, 1) 20%,  rgba(255, 255, 255, 2) 150%);
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 225, 0) -50%, rgba(225, 225, 225, 1) 20%,  rgba(255, 255, 255, 2) 150%);
+}
+
+#benefits .sidebar{
+  // margin-top: 70px;
+  height: 45%;
+  background-color: #D8D8D8;
+  width: 75%;
+  left: 12.5%;
+  background:         linear-gradient(to bottom, rgba(255, 255, 255, 0) -50%, rgba(255, 255, 255, 1) 20%,  rgba(255, 255, 255, 2) 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) -50%, rgba(255, 255, 255, 1) 20%,  rgba(255, 255, 255, 2) 100%);
+
+}
+
+#services{
+  // background-color: green;
+  background-color: rgba(#008000, $alpha);
+  width: 100%;
+}
+
+#testimonials{
+  // background-color: red;
+  background-color: rgba(#FF0000, $alpha);
+
+  width: 100%;
+}
+
+#benefits{
+  // background-color: blue;
+  background-color: rgba(#0000FF, $alpha);
+  width: 100%;
+} 
+
+.bannerimg{
+  background-image: url('../img/cityscape.jpg');
+  background-size: cover;
+}
+
+
+#services .service{
+  background-image: url('../img/above.jpg');
+  // background-size: 100% auto;
+}
+
+
+#services .service:nth-child(2){
+  background-image: url('../img/rural7.jpg');
+  // background-size: 100% auto;
+}
+
+#testimonials .testi{
+  background-image: url('../img/men.jpeg');
+  // background-size: 100% auto;
+}
+
+#testimonials .testi:nth-child(2){
+  background-image: url('../img/code3.jpeg');
+  // background-size: 100% auto;
+}
+
+#benefits .benefit{
+  background-image: url('../img/code1.jpeg');
+  // background-size: 100% auto;
+}
+
+#benefits .benefit:nth-child(2){
+  left: 50%;
+  background-repeat: no-repeat;
+  // background-size: 100% auto;
+  background-image: url('../img/rural5.jpeg');
+}
+
+#banner{
+  // background-image: url('');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover auto;
+  background-position: 50%, 50%;
+  background-color: #DDDDDD;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vert .base{
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.vert .block{
+  height: 50%;
+  background-color: yellow;
+  background-color: rgba(#FFFF00, $alpha);
+} 
+
+#testimonials .base{
+  background-color: green;
+  background-color: rgba(#008000, $alpha);
+  right: 0px;
+  float: right;
+}
+
+.darkHalfOpac{
+  background-color: rgba( 100, 100, 100, .25);
+}
+
+#services .base{
+  background-color: red;
+  background-color: rgba(#FF0000, $alpha);
+  left: 0px;
+  float: left;
+}
+
+.page{
+  padding-bottom: 20px;
+  padding-top: 70px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#benefits.page{
+  // padding-top: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+#team{
+  width: 90%;
+  margin: auto;
+  height: 230vh;
+  margin: 5vw;
+  padding: 5vw;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.normalSize{
+  transform: scale(.75, .75);
+}
+
+
+#benefits .base{
+  width: 100%;
+  height: 100%;
+  // background-color: purple;
+  background-color: rgba(#800080, $alpha);
+  position: relative;
+  padding: 0px;
+  margin-left: 0px;
+}
+
+.block{
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 5em;
+  box-sizing: border-box;
+  background:#000 url('0.jpg');
+  background-position: 0px;
+}
+
+#benefits .benefit{
+  float: left;
+  height: 100%;
+  background-color: rgba(#008000, $alpha);
+  height: 50%;
+  position: absolute;
+  bottom: 0%;
+  width: 50%;
+}
+
+/*
+.benefitContainer{
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  float: left;
+  height: 55vh;
+  margin-top: 45vh;
+  // bottom: 0px;
+}
+*/
+
+#main{
+  height: 200vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  width: calc(100vw + 16px);
+  top: 100vh;
+  padding-top: 200vh;
+  // pointer-events:none;
+  // visibility: hidden;
+}
+
+#scrollTarget{
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 97%;
+  position: fixed;
+  // top: -100vh;
+  margin: auto;
+}
+  
+@media (max-height: 640px){
+  #scrollBounds{
+    height: 50%;
+    width: 25px;
+    top: 15vh;
+    bottom: 0px;
+    margin:auto;
+    position: fixed;
+    background-color: #D8D8D8;
+    z-index: 4;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: -30px;
+    border: 2px solid white;
+  }
+}
+
+@media (max-height: 260px){
+
+  footer{
+    height: 10vh;
+    bottom: 0vh;
+  }
+
+  .fixedFooter{
+    bottom: 0vh;
+  }
+}
+
+@media (min-width: 1120px){
+  #scrollTarget{
+    margin: auto;
+    width: calc(800px + 25vw);
+  }
+
+  #services .sidebar{
+    width: 40%;
+  }
+  #testimonials .sidebar{
+    width: 40%;
+  }
+
+  #banner{
+    width: 100vw;
+  }
+} 
+
+.testibab{
+  background-color: green;
+  height: 1000px;
+}
+
+.bannerPadding{
+  height: 100vh;
+}
+
+// .clear{
+//   width: 100%;
+//   height: 200px;
+//   background-color: purple;
+//   position: absolute;
+//   // bottom: 0px;
+// }
+
+
+.push{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  background-color: rgba(#FFFF00, $alpha);
+}
+
+.screenHeight{
+  height: 100vh;
+  width: 100%;
+  visibility: hidden;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
+
+.red{
+  background-color: red;
+  background-color: rgba(#FF0000, $alpha);
+}
+.yellow{
+  background-color: yellow;
+}
+.blue{
+  background-color: blue;
+}
+.orange{
+  background-color: orange;
+}
+.green{
+  background-color: green;
+}
